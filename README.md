@@ -84,9 +84,15 @@ Default:
 }
 ```
 
-## Install locally
+## Installation
 
-You can install Prompt Scratchpad without publishing it to the Marketplace.
+Prompt Scratchpad can be installed directly from the GitHub release artifact.
+
+### Download from GitHub Releases
+
+Download the latest `.vsix` from:
+
+- [Releases](https://github.com/xukp20/prompt-scratchpad/releases)
 
 ### Install from VSIX in VS Code
 
@@ -106,6 +112,10 @@ If you are using VS Code Insiders:
 ```bash
 code-insiders --install-extension prompt-scratchpad-0.0.1.vsix
 ```
+
+## Local development install
+
+You can also build and install Prompt Scratchpad locally without publishing it anywhere.
 
 ### Build a new VSIX
 
