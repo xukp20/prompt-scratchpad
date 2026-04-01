@@ -36,7 +36,7 @@ It stays intentionally focused. Prompt Scratchpad does not try to replace your t
   - `Copy`
   - `Clear`
   - `Cut`
-  - `Append`
+  - `Paste`
 - Includes terminal actions:
   - `Paste to Terminal`
   - `Move to Terminal`

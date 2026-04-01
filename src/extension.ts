@@ -303,7 +303,7 @@ class ScratchpadController {
           <button id="copy" class="primary" title="Copy draft to clipboard">Copy</button>
           <button id="clear" class="secondary" title="Clear the draft">Clear</button>
           <button id="cut" class="secondary" title="Copy and clear the draft">Cut</button>
-          <button id="appendClipboard" class="secondary" title="Append clipboard text to the draft">Append</button>
+          <button id="appendClipboard" class="secondary" title="Paste clipboard text into the draft">Paste</button>
         </div>
         <div class="group group-two">
           <button id="paste" class="secondary" title="Paste draft into the active terminal without clearing">Paste to Terminal</button>
