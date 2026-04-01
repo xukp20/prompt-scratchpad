@@ -84,6 +84,35 @@ Default:
 }
 ```
 
+## Install locally
+
+You can install Prompt Scratchpad without publishing it to the Marketplace.
+
+### Install from VSIX in VS Code
+
+1. Open the Extensions view in VS Code
+2. Select `...` in the top-right corner
+3. Choose `Install from VSIX...`
+4. Select your packaged `.vsix` file
+
+### Install from the command line
+
+```bash
+code --install-extension prompt-scratchpad-0.0.1.vsix
+```
+
+If you are using VS Code Insiders:
+
+```bash
+code-insiders --install-extension prompt-scratchpad-0.0.1.vsix
+```
+
+### Build a new VSIX
+
+```bash
+npx vsce package
+```
+
 ## Commands
 
 - `Prompt Scratchpad: Open Scratchpad`
