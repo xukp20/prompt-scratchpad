@@ -58,7 +58,7 @@ button {
   border-radius: 4px;
   padding: 3px 10px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.3;
   width: 100%;
   min-width: 0;
@@ -91,7 +91,7 @@ textarea {
   padding: 12px;
   background: var(--vscode-input-background);
   color: var(--vscode-input-foreground);
-  font: 13px/1.5 var(--vscode-editor-font-family, var(--vscode-font-family));
+  font: 18px/1.6 var(--vscode-editor-font-family, var(--vscode-font-family));
 }
 
 .hint {

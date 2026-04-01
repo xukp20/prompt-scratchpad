@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.3
+
+- Increase the scratchpad editor font size to 18px
+- Increase toolbar button text slightly for better readability
+
 ## 0.0.2
 
 - Rename the draft action from `Append` to `Paste`

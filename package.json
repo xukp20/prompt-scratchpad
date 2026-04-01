@@ -2,7 +2,7 @@
   "name": "prompt-scratchpad",
   "displayName": "Prompt Scratchpad",
   "description": "A lightweight VS Code prompt scratchpad for Codex and Claude Code terminal workflows.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "xukp20",
   "license": "MIT",
   "homepage": "https://github.com/xukp20/prompt-scratchpad#readme",
