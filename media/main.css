@@ -1,0 +1,101 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  color: var(--vscode-foreground);
+  background: var(--vscode-editor-background);
+  font-family: var(--vscode-font-family);
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: calc(100vh - 24px);
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.group {
+  display: grid;
+  gap: 0;
+  width: 100%;
+}
+
+.group.group-four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.group.group-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.group button {
+  position: relative;
+}
+
+.group button + button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22%;
+  bottom: 22%;
+  width: 1px;
+  background: var(--vscode-panel-border, var(--vscode-widget-border, rgba(127, 127, 127, 0.25)));
+}
+
+button {
+  border: 0;
+  background: transparent;
+  color: var(--vscode-foreground);
+  border-radius: 4px;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.3;
+  width: 100%;
+  min-width: 0;
+}
+
+button.primary {
+  font-weight: 600;
+}
+
+button.secondary {
+  color: var(--vscode-foreground);
+}
+
+button:hover {
+  background: color-mix(in srgb, var(--vscode-list-hoverBackground, var(--vscode-toolbar-hoverBackground, rgba(127, 127, 127, 0.14))) 100%, transparent);
+}
+
+button:active {
+  background: color-mix(in srgb, var(--vscode-list-activeSelectionBackground, var(--vscode-toolbar-activeBackground, rgba(127, 127, 127, 0.22))) 45%, transparent);
+}
+
+textarea {
+  width: 100%;
+  min-height: 260px;
+  height: 100%;
+  box-sizing: border-box;
+  resize: none;
+  border: 1px solid var(--vscode-input-border, transparent);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  font: 13px/1.5 var(--vscode-editor-font-family, var(--vscode-font-family));
+}
+
+.hint {
+  color: var(--vscode-descriptionForeground);
+  font-size: 12px;
+  padding: 0 2px;
+}

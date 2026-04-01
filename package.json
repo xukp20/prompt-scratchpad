@@ -1,0 +1,126 @@
+{
+  "name": "prompt-scratchpad",
+  "displayName": "Prompt Scratchpad",
+  "description": "A lightweight VS Code prompt scratchpad for Codex and Claude Code terminal workflows.",
+  "version": "0.0.1",
+  "publisher": "xukp20",
+  "license": "MIT",
+  "homepage": "https://github.com/xukp20/prompt-scratchpad#readme",
+  "bugs": {
+    "url": "https://github.com/xukp20/prompt-scratchpad/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xukp20/prompt-scratchpad.git"
+  },
+  "keywords": [
+    "prompt",
+    "scratchpad",
+    "terminal",
+    "codex",
+    "claude-code",
+    "ai",
+    "cli"
+  ],
+  "galleryBanner": {
+    "color": "#1f6feb",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:promptScratchpad.openScratchpad",
+    "onView:promptScratchpad.sidebarView",
+    "onView:promptScratchpad.panelView"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "promptScratchpad.openScratchpad",
+        "title": "Prompt Scratchpad: Open Scratchpad"
+      },
+      {
+        "command": "promptScratchpad.openScratchpadInSidebar",
+        "title": "Prompt Scratchpad: Open in Sidebar"
+      },
+      {
+        "command": "promptScratchpad.openScratchpadInPanel",
+        "title": "Prompt Scratchpad: Open in Panel"
+      },
+      {
+        "command": "promptScratchpad.openScratchpadInEditor",
+        "title": "Prompt Scratchpad: Open in Editor"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "promptScratchpadSidebar",
+          "title": "Prompt Scratchpad",
+          "icon": "media/panel-icon.svg"
+        }
+      ],
+      "panel": [
+        {
+          "id": "promptScratchpadPanel",
+          "title": "Prompt Scratchpad",
+          "icon": "media/panel-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "promptScratchpadSidebar": [
+        {
+          "id": "promptScratchpad.sidebarView",
+          "name": "Scratchpad",
+          "type": "webview"
+        }
+      ],
+      "promptScratchpadPanel": [
+        {
+          "id": "promptScratchpad.panelView",
+          "name": "Scratchpad",
+          "type": "webview"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Prompt Scratchpad",
+      "properties": {
+        "promptScratchpad.openLocation": {
+          "type": "string",
+          "enum": [
+            "sidebar",
+            "panel",
+            "editor"
+          ],
+          "default": "sidebar",
+          "markdownDescription": "Default location opened by the Prompt Scratchpad status bar button.",
+          "enumDescriptions": [
+            "Open Prompt Scratchpad in the primary sidebar.",
+            "Open Prompt Scratchpad in the bottom panel.",
+            "Open Prompt Scratchpad as an editor tab."
+          ]
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.24",
+    "@types/vscode": "^1.96.0",
+    "@vscode/vsce": "^3.2.2",
+    "typescript": "^5.8.2"
+  }
+}
