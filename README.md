@@ -104,13 +104,13 @@ Download the latest `.vsix` from:
 ### Install from the command line
 
 ```bash
-code --install-extension prompt-scratchpad-0.0.1.vsix
+code --install-extension prompt-scratchpad-0.0.2.vsix
 ```
 
 If you are using VS Code Insiders:
 
 ```bash
-code-insiders --install-extension prompt-scratchpad-0.0.1.vsix
+code-insiders --install-extension prompt-scratchpad-0.0.2.vsix
 ```
 
 ## Local development install

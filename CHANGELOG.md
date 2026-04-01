@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.2
+
+- Rename the draft action from `Append` to `Paste`
+- Refresh the toolbar labels and README wording
+- Keep installation instructions aligned with GitHub Releases
+
 ## 0.0.1
 
 - Initial release of Prompt Scratchpad
